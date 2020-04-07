@@ -1,32 +1,51 @@
-#heading {
+.heading {
   font-family: 'CODE Bold';
-  font-size: 15vw;
-  text-align: center;
   line-height: 1;
-  margin: 0;
-  top: 45%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  position: absolute;
+  font-size: 20vw;
   color: #3f3d3d;
-  letter-spacing: -.5rem;
+  position: relative;
 }
 
-#heading:before {
-  content: attr(data-heading);
-  position: absolute;
-  overflow: hidden;
-  color: #ffcc00;
+.span-header{
+  display: contents;
+}
+
+.heading-container{
   width: 100%;
+  padding:0px;
+  justify-content: center;
+  place-items: center;
+}
+
+.main-font{
+  font-family: 'CODE Bold';
+}
+#light-flicker:before{
+  content: "A";
+  color: #ffcc00;
+  position: absolute;
   z-index: 5;
   text-shadow: none;
-  left: 24%;
+  text-align: center;
+  left: 23.6%;
+  -webkit-animation: flicker 3s linear infinite;
+          animation: flicker 3s linear infinite;
+}
+/*
+#heading:before {
+  content: "A";
+  position: relative;
+  overflow: hidden;
+  color: #ffcc00;
+  z-index: 5;
+  text-shadow: none;
+  left: 26%;
   text-align: left;
   -webkit-animation: flicker 3s linear infinite;
           animation: flicker 3s linear infinite;
 }
 
+*/
 @-webkit-keyframes flicker {
   0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
     opacity: .99;
@@ -78,3 +97,10 @@
   src: url("../../fonts/CODE Light.otf");
 }
 /*# sourceMappingURL=heading-flicker.css.map */
+
+
+@media only screen and (min-width:1024px){
+  .heading {
+    font-size: 15vw;
+  }
+}
