@@ -9,10 +9,7 @@
     "@testing-library/user-event": "^7.1.2",
     "babel": "^6.23.0",
     "gsap": "^3.2.6",
-<<<<<<< HEAD
-=======
     "n": "^6.4.0",
->>>>>>> 287feb553d03d5b74950ca27f5e6a5caa61a4061
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.0",
     "react-dom": "^16.13.1",
